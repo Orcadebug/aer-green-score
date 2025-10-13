@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import aerLogo from "@/assets/aer-logo.png";
 
 const Hero = () => {
-  const scrollToAssessment = () => {
-    document.getElementById("assessment")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const navigate = useNavigate();
 
   return (
     <section className="relative bg-gradient-hero overflow-hidden">
@@ -72,7 +71,7 @@ const Hero = () => {
             <Button 
               variant="hero" 
               size="xl" 
-              onClick={scrollToAssessment}
+              onClick={() => navigate("/assessment")}
               className="group"
             >
               Start Free Assessment

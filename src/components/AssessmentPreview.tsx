@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ClipboardCheck, BarChart3, Rocket, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const AssessmentPreview = () => {
+  const navigate = useNavigate();
   const benefits = [
     {
       icon: ClipboardCheck,
@@ -60,7 +62,12 @@ const AssessmentPreview = () => {
               No registration required. Immediate feedback. Actionable insights to qualify for EU financing and green loans.
             </p>
             
-            <Button variant="cta" size="xl" className="group">
+            <Button 
+              variant="cta" 
+              size="xl" 
+              className="group"
+              onClick={() => navigate("/assessment")}
+            >
               Start The Assessment Now
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
