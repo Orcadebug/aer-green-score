@@ -170,7 +170,7 @@ const Results = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="cta" size="lg" className="gap-2">
                 <Calendar className="h-5 w-5" />
-                Book Free Consultation
+                Start Your 30-Day Free Trial
               </Button>
               <Button variant="hero" size="lg" onClick={() => navigate("/")}>
                 Return to Home
@@ -185,9 +185,11 @@ const Results = () => {
               Ready to transform your carbon management? Our team is here to help.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button variant="outline" size="sm" className="gap-2">
-                <Mail className="h-4 w-4" />
-                contact@aercarbon.com
+              <Button variant="outline" size="sm" className="gap-2" asChild>
+                <a href="mailto:contact@aercarbon.com">
+                  <Mail className="h-4 w-4" />
+                  contact@aercarbon.com
+                </a>
               </Button>
               <Button variant="outline" size="sm" className="gap-2">
                 <Phone className="h-4 w-4" />
