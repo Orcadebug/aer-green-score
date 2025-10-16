@@ -22,48 +22,42 @@ const Hero = () => {
 
         {/* Main content */}
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          {/* Hook */}
+          {/* Headline */}
           <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight animate-slide-up">
-            Frustrated by confusing carbon compliance rules and{" "}
-            <span className="text-primary">missed funding?</span>
+            Measure Your Scope 1–3 Emissions in Minutes and Generate{" "}
+            <span className="text-primary">CBAM-Compliant Reports Instantly</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-slide-up" style={{ animationDelay: "0.1s" }}>
-            Even though you're investing in sustainability, it feels impossible to unlock green revenue and recognition.
+            Real-time GHG calculations, automated XML exports, and immutable audit trails—no carbon-compliance expertise needed.
           </p>
 
           {/* Value proposition */}
           <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-8 shadow-strong animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Ready to become a leader in transparent, audit-ready carbon reporting?
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Stop wrestling with spreadsheets and emission factors. With AER, you'll:
             </h2>
-            <p className="text-lg text-muted-foreground mb-6">
-              Answer 15 questions to discover your <span className="font-semibold text-primary">Carbon Performance Score</span> and get a tailored action plan to boost your business's credibility for investors, banks, and regulators.
-            </p>
 
             {/* Benefits */}
-            <div className="grid md:grid-cols-3 gap-4 mb-8 text-left">
+            <div className="space-y-4 mb-8 text-left max-w-2xl mx-auto">
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                <div>
-                  <h3 className="font-semibold text-foreground">Measure Accuracy</h3>
-                  <p className="text-sm text-muted-foreground">Emissions reporting precision</p>
-                </div>
+                <p className="text-lg text-foreground">
+                  Get <span className="font-bold">instant</span> Scope 1–3 footprints using official EU 2024 factors
+                </p>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                <div>
-                  <h3 className="font-semibold text-foreground">Benchmark Supply Chain</h3>
-                  <p className="text-sm text-muted-foreground">Transparency standards</p>
-                </div>
+                <p className="text-lg text-foreground">
+                  Produce <span className="font-bold">CBAM-ready</span> XML reports in one click
+                </p>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                <div>
-                  <h3 className="font-semibold text-foreground">Diagnose Readiness</h3>
-                  <p className="text-sm text-muted-foreground">EU CBAM, SEC & green loans</p>
-                </div>
+                <p className="text-lg text-foreground">
+                  Securely <span className="font-bold">stamp</span> data on Polygon for audit proof
+                </p>
               </div>
             </div>
 
@@ -74,12 +68,16 @@ const Hero = () => {
               onClick={() => navigate("/assessment")}
               className="group"
             >
-              Start Free Assessment
+              Start Your 30-Day Free Trial
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <p className="text-sm text-muted-foreground mt-4">
-              FREE • 3 minutes • Instant results • No registration required
-            </p>
+            
+            {/* Urgency */}
+            <div className="mt-6 p-4 bg-primary/10 rounded-lg border border-primary/20">
+              <p className="text-sm font-semibold text-foreground">
+                Only 20 SME pilot slots available before CBAM enforcement on January 1, 2026. Reserve yours today.
+              </p>
+            </div>
           </div>
         </div>
       </div>

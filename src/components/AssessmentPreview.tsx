@@ -29,10 +29,10 @@ const AssessmentPreview = () => {
           {/* Header */}
           <div className="text-center mb-16 animate-slide-up">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-              Take the Free <span className="text-primary">Carbon Score Assessment</span>
+              See a <span className="text-primary">Live Demo</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Discover where you stand and what steps will get you audit-ready for EU financing and green loans.
+              Fast, mobile-first design that gets you from signup to first report in under 30 minutes.
             </p>
           </div>
 
@@ -56,10 +56,10 @@ const AssessmentPreview = () => {
           {/* CTA Card */}
           <div className="bg-card rounded-2xl p-8 md:p-12 shadow-strong text-center animate-slide-up" style={{ animationDelay: "0.3s" }}>
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Ready to unlock your carbon credentials?
+              Ready to Start Your Measure → Prove Journey?
             </h3>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              No registration required. Immediate feedback. Actionable insights to qualify for EU financing and green loans.
+              Join the pilot program and get your first CBAM-compliant report in minutes, not months.
             </p>
             
             <Button 
@@ -68,7 +68,7 @@ const AssessmentPreview = () => {
               className="group"
               onClick={() => navigate("/assessment")}
             >
-              Start The Assessment Now
+              Start Your 30-Day Free Trial
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
